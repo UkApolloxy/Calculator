@@ -1,24 +1,18 @@
-const display = document.getElementById("display");
-
-function appendToDisplay(input) {
-    // Handle backspace (DEL) if needed
-    if (input === 'DEL') {
-        display.value = display.value.slice(0, -1);
-    } else {
-        display.value += input;
-    }
+function appendToDisplay(value) {
+    const display = document.getElementById('display');
+    display.value += value;
 }
 
 function clearDisplay() {
-    display.value = "";
+    document.getElementById('display').value = '';
 }
 
 function calculate() {
+    const display = document.getElementById('display');
     try {
-        // Evaluate the expression safely
-        display.value = eval(display.value);
-    } catch (error) {
-        // Handle errors (e.g., syntax errors) in the expression
+        // Use math.js or similar libraries for more complex calculations
+        display.value = eval(display.value.replace('^', '**').replace('sqrt', 'Math.sqrt').replace('log', 'Math.log10').replace('sin', 'Math.sin').replace('cos', 'Math.cos').replace('tan', 'Math.tan'));
+    } catch (e) {
         display.value = 'Error';
     }
 }
