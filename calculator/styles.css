@@ -7,9 +7,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0; /* Fallback background color */
+    background-color: #1f1f1f; /* Fallback background color */
     position: relative;
 }
+
 
 /* From Uiverse.io by ShadowShahriar */
 #back-to-home {
@@ -21,7 +22,7 @@ body {
     left: 20px; /* Adjust this value to control horizontal distance from the left */
     padding: 1em 2em;
     border: 0;
-    background-color: #212121;
+    background-color: #;
     font-family: "Roboto", Arial, "Segoe UI", sans-serif;
     font-size: 18px;
     font-weight: 500;

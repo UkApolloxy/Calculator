@@ -1,13 +1,12 @@
-.container {
-    position: relative; /* Ensures the image is positioned relative to this container */
-    width: 100%; /* Adjust this based on your container's width */
-    height: 100%; /* Adjust this based on your container's height */
-}
-
-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%; /* Adjust this value to make the image smaller */
-    height: auto; /* Keeps the image's aspect ratio intact */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1f1f;
+    position: relative;
 }
