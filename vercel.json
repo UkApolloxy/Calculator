@@ -4,18 +4,7 @@
       "source": "/index.html",
       "destination": "/home",
       "permanent": true
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/home",
-      "destination": "/index.html"
-    }
-  ]
-}
-
-{
-  "redirects": [
+    },
     {
       "source": "/calculator.html",
       "destination": "/calculator",
@@ -23,6 +12,10 @@
     }
   ],
   "rewrites": [
+    {
+      "source": "/home",
+      "destination": "/index.html"
+    },
     {
       "source": "/calculator",
       "destination": "/calculator.html"
