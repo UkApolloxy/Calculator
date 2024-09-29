@@ -13,3 +13,19 @@
     }
   ]
 }
+
+{
+  "redirects": [
+    {
+      "source": "/calculator.html",
+      "destination": "/calculator",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/calculator",
+      "destination": "/calculator.html"
+    }
+  ]
+}
